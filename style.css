@@ -1,0 +1,126 @@
+html, body{
+    height: 100%;
+    text-align: left;
+}
+
+
+header{
+    background-image: url(forsiden.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+
+.ita{
+    height: 100vh;
+    margin: 75px; 
+}
+
+.dk{
+    height: 100vh;
+    margin: 75px; 
+}
+
+.fakta{
+    height: 100vh;
+    margin: 75px; 
+}
+
+.citat{
+    height: 100vh;
+    margin: 75px; 
+}
+
+img{
+    max-height: 300px;
+    align-items: center;
+    
+}
+h2 {
+     font-family: 'Cinzel', serif;
+     color: #f22626; 
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+p, img{
+  font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+
+#mitgrid{
+    display: grid;
+    grid-gap: 5fr;
+    grid-template-columns:1fr;
+    grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        "k"
+        "l"
+}
+
+.forsiden {
+    grid-area: a;
+    font-family: 'Cinzel', serif;
+    color: #f22626;
+}
+
+#intro {
+    grid-area: b;
+   
+}
+
+#italiensk morgenmad {
+    grid-area: c; 
+}
+
+#billede til italien {
+    grid-area: d;
+}
+
+#typisk dansk morgenmad{
+    grid-area: e;
+}
+
+#billede til dansk morgenmad{
+    grid-area: f;
+}
+
+#faktaboks{
+    grid-area: g;
+}
+
+#fakta billede{
+    grid-area: h;
+}
+
+#faktaboks{
+    grid-area: i;
+}
+
+
+#citat{
+    grid: k;
+}
+
+footer{
+    grid-area: l;
+  
+}
+
