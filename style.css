@@ -37,11 +37,24 @@ header{
     margin: 75px; 
 }
 
+
+.card{ 
+
+    display: flex; 
+
+    min-width: 100%; 
+} 
+
+.card::-webkit-scrollbar{ 
+
+    display: none; 
+} 
+
 img{
     max-height: 300px;
     align-items: center;
-    
 }
+
 h2 {
      font-family: 'Cinzel', serif;
      color: #f22626; 
@@ -119,7 +132,7 @@ p, img{
     grid: k;
 }
 
-footer{
+#produkt{
     grid-area: l;
   
 }
