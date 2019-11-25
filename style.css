@@ -1,6 +1,5 @@
 html, body{
     height: 100%;
-    width: 100%;
     text-align: center;
 }
 
@@ -9,18 +8,16 @@ header{
     background-image: url(forsiden.jpg);
     height: 100vh;
     background-size: cover;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     color: white;
 }
 
 .ita{
     height: 100vh;
-    margin: 75px; 
+    background-image: url(Asset%201-8.png);
 }
 
 .dk{
@@ -30,7 +27,7 @@ header{
 
 .fakta{
     height: 100vh;
-    margin: 75px; 
+    background-image: url(Asset%201-8.png); 
 }
 
 .citat{
@@ -38,6 +35,21 @@ header{
     margin: 75px; 
 }
 
+a{
+    font-family:'Roboto', sans-serif;
+}
+
+a:link {color: #f22626; text-decoration: none;
+}
+
+a:visited
+{color: white;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
 img{
     max-height: 300px;
@@ -46,6 +58,7 @@ img{
 
 h2 {
      font-family: 'Cinzel', serif;
+    margin: 75px;
      color: #f22626; 
     max-width: 600px;
     margin: 0 auto 20px;
@@ -54,13 +67,109 @@ h2 {
 
 p, img{
   font-family: 'Roboto', sans-serif;
+    margin: 75px;
     max-width: 600px;
     margin: 0 auto 20px;
+    max-width: 600px;
 }
 
 footer{
     text-align: center;
 }
+
+.box{ 
+
+    height: 300px; 
+
+    overflow-x: scroll; 
+
+    overflow-y: hidden; 
+
+    white-space: nowrap; 
+
+} 
+
+.box::-webkit-scrollbar{ 
+
+    display: none; 
+
+} 
+
+.card-a{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+} 
+
+.card-b{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+     
+
+} 
+
+.card-c{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+     
+
+} 
+
+.card-d{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+     
+
+} 
+
+.card-e{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+} 
+
+.card-f{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+} 
+
+.card-g{ 
+
+    display: inline-block; 
+
+    height: 100%; 
+
+    width: 400px; 
+
+} 
 
 #mitgrid{
     display: grid;
