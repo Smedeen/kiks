@@ -1,6 +1,7 @@
 html, body{
     height: 100%;
-    text-align: left;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -38,18 +39,6 @@ header{
 }
 
 
-.card{ 
-
-    display: flex; 
-
-    min-width: 100%; 
-} 
-
-.card::-webkit-scrollbar{ 
-
-    display: none; 
-} 
-
 img{
     max-height: 300px;
     align-items: center;
@@ -69,6 +58,9 @@ p, img{
     margin: 0 auto 20px;
 }
 
+footer{
+    text-align: center;
+}
 
 #mitgrid{
     display: grid;
@@ -76,7 +68,6 @@ p, img{
     grid-template-columns:1fr;
     grid-template-areas: 
         "a"
-        "b"
         "c"
         "d"
         "e"
@@ -84,20 +75,13 @@ p, img{
         "g"
         "h"
         "i"
-        "k"
         "l"
 }
 
-.forsiden {
+#forside {
     grid-area: a;
-    font-family: 'Cinzel', serif;
-    color: #f22626;
 }
 
-#intro {
-    grid-area: b;
-   
-}
 
 #italiensk morgenmad {
     grid-area: c; 
@@ -127,13 +111,55 @@ p, img{
     grid-area: i;
 }
 
-
-#citat{
-    grid: k;
-}
-
 #produkt{
     grid-area: l;
   
 }
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  #mitgrid{
+    display: grid;
+    grid-gap: 5fr;
+    grid-template-columns:1fr, 1fr;
+    grid-template-areas: 
+        "a a"
+        "c d"
+        "f e"
+        "h h"
+        "g g"
+        "l l";
+}
+    
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+      #mitgrid{
+    display: grid;
+    grid-gap: 5fr;
+    grid-template-columns:1fr, 1fr;
+    grid-template-areas: 
+        "a a"
+        "c d"
+        "f e"
+        "g h"
+        "l l";
+}
+   
+}
+
+
+
 
