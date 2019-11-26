@@ -3,7 +3,7 @@ html, body{
     text-align: center;
 }
 
-
+/* Forsiden */
 header{
     background-image: url(forsiden.jpg);
     height: 100vh;
@@ -13,26 +13,38 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
+   
 }
 
+#tekst{
+    padding-top: 250px;
+}
+/* Forsiden slut */
+
 .ita{
-    height: 100vh;
-    background-image: url(Asset%201-8.png);
+    height: 120vh;
+    background-image: url(Asset%202.png);
+    background-size: cover;
+    padding-top: 80px;
 }
 
 .dk{
-    height: 100vh;
-    margin: 75px; 
+    height: 120vh;
+    background-color: white;
+    padding-top: 80px;
 }
 
 .fakta{
-    height: 100vh;
-    background-image: url(Asset%201-8.png); 
+    height: 120vh;
+    background-image: url(Asset%202.png);
+    background-size: cover;
+    padding-top: 80px;
 }
 
 .citat{
-    height: 100vh;
-    margin: 75px; 
+    height: 120vh;
+    background-color: white;
+    padding-top: 80px;
 }
 
 a{
@@ -57,12 +69,21 @@ img{
 }
 
 h2 {
-     font-family: 'Cinzel', serif;
+    padding: 20px;
+    font-family: 'Cinzel', serif;
     margin: 75px;
      color: #f22626; 
     max-width: 600px;
     margin: 0 auto 20px;
     text-align: center;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+p{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 p, img{
@@ -77,6 +98,7 @@ footer{
     text-align: center;
 }
 
+/* css kode til vores scrollbar */
 .box{ 
 
     height: 300px; 
@@ -170,6 +192,8 @@ footer{
     width: 400px; 
 
 } 
+
+/*scrollbaren slutter her */
 
 #mitgrid{
     display: grid;
