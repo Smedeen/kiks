@@ -1,10 +1,26 @@
-html, body{
+    
+    html, body{
     height: 100%;
     text-align: center;
 }
 
+.bi{
+    width: 80%;  
+    max-width: 600px;
+    }
+    
+.bd{
+    width: 80%;
+    max-width: 600px;
+    }
+    
+.bf{
+    width: 80%;
+    max-width: 600px;
+    }
+
 /* Forsiden */
-header{
+ #forside{
     background-image: url(forsiden.jpg);
     height: 100vh;
     background-size: cover;
@@ -16,42 +32,51 @@ header{
    
 }
 
-#tekst{
-    padding-top: 250px;
-}
 /* Forsiden slut */
-
-.ita{
-    height: 120vh;
+    
+    #ita, #bita{
     background-image: url(Asset%202.png);
+    height: 50vh;
     background-size: cover;
-    padding-top: 80px;
-}
-
-.dk{
-    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #dk, #bdk{
     background-color: white;
-    padding-top: 80px;
-}
-
-.fakta{
-    height: 120vh;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        }
+    
+    #bfakta, #faktaboks{
     background-image: url(Asset%202.png);
+    height: 50vh;
     background-size: cover;
-    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+.info{
+    justify-content: flex-end;
+    font-size: 2vw;
 }
 
-.citat{
-    height: 120vh;
-    background-color: white;
-    padding-top: 80px;
-}
 
+/* læs mere knappen */
 a{
     font-family:'Roboto', sans-serif;
+    font-size: 3vw;
 }
 
-a:link {color: #f22626; text-decoration: none;
+a:link {color: #ffffff; text-decoration: none;
 }
 
 a:visited
@@ -62,41 +87,62 @@ a:hover{
     color: white;
     text-decoration: underline;
 }
+/* slutning til læs mere */
 
-img{
-    max-height: 300px;
-    align-items: center;
+   h3{
+    font-family:'Roboto', sans-serif;
+    margin: 75px; 
+    max-width: 500px;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 3vw;
+    }
+}
+
+
+h1{
+    font-size: 6vw;
 }
 
 h2 {
     padding: 20px;
     font-family: 'Cinzel', serif;
     margin: 75px;
-     color: #f22626; 
-    max-width: 600px;
+    color: #f22626; 
+    max-width: 500px;
     margin: 0 auto 20px;
     text-align: center;
     padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
+    font-size: 5vw;
 }
 
-p{
-    padding-left: 50px;
-    padding-right: 50px;
+    p{
+    font-family:'Roboto', sans-serif;
+    margin: 75px; 
+    max-width: 500px;
+    margin: 0 auto 20px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 3vw;
+    }
 }
 
 p, img{
   font-family: 'Roboto', sans-serif;
-    margin: 75px;
-    max-width: 600px;
     margin: 0 auto 20px;
-    max-width: 600px;
 }
 
 footer{
     text-align: center;
+    font-size: 1vw;
 }
+
+
 
 /* css kode til vores scrollbar */
 .box{ 
@@ -133,8 +179,7 @@ footer{
 
     height: 100%; 
 
-    width: 400px; 
-
+    width: 400px;
      
 
 } 
@@ -192,15 +237,15 @@ footer{
     width: 400px; 
 
 } 
-
 /*scrollbaren slutter her */
 
 #mitgrid{
     display: grid;
-    grid-gap: 5fr;
+    grid-gap: 10fr;
     grid-template-columns:1fr;
     grid-template-areas: 
         "a"
+        "b"
         "c"
         "d"
         "e"
@@ -208,45 +253,50 @@ footer{
         "g"
         "h"
         "i"
-        "l"
+        "j"
+        "k"
 }
 
-#forside {
+#forside{
     grid-area: a;
 }
 
 
-#italiensk morgenmad {
-    grid-area: c; 
+#ita{
+    grid-area: b; 
 }
 
-#billede til italien {
+#bita{
+    grid-area: c;
+}
+
+#dk{
     grid-area: d;
 }
 
-#typisk dansk morgenmad{
+#bdk{
     grid-area: e;
 }
 
-#billede til dansk morgenmad{
-    grid-area: f;
-}
-
-#faktaboks{
+#bfakta{
     grid-area: g;
 }
 
-#fakta billede{
+#faktaboks{
     grid-area: h;
 }
 
-#faktaboks{
-    grid-area: i;
+#citat{
+    grid-area: i; 
+    padding-top: 90px;
 }
 
-#produkt{
-    grid-area: l;
-  
+.box{
+    grid-area: j;
+}
+
+footer{
+    grid-area: k;
 }
 
 
@@ -259,18 +309,68 @@ footer{
   
   #mitgrid{
     display: grid;
-    grid-gap: 5fr;
     grid-template-columns:1fr, 1fr;
     grid-template-areas: 
         "a a"
-        "c d"
-        "f e"
-        "h h"
+        "b c"
+        "e d"
         "g g"
-        "l l";
+        "h h"
+        "i i"
+        "j j"
+        "k k";
 }
+     #ita{
+    background-image: url(Asset%202.png);
+    height: 100vh;
+    width: 50vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
     
+    #bita{
+    background-image: url(Asset%202.png);
+    height: 100vh;
+    width: 50vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #dk, #bdk{
+    height: 100vh;
+        }
+    
+    #bfakta, #faktaboks{
+    height: 50vh;
+    }
+ 
+    
+h3{
+    font-size: 2vw;
+    }
+
+h1{
+    font-size: 5vw;
 }
+
+h2 {
+    font-size: 4vw;
+}
+
+p{
+    font-size: 2vw;
+    }
+a{
+    font-size: 2vw;
+}
+}
+
 
 
 /* 
@@ -281,16 +381,49 @@ footer{
 @media (min-width: 1281px) {
       #mitgrid{
     display: grid;
-    grid-gap: 5fr;
-    grid-template-columns:1fr, 1fr;
+    grid-template-columns:1fr, 1fr, 1fr, 1fr;
     grid-template-areas: 
-        "a a"
-        "c d"
-        "f e"
-        "g h"
-        "l l";
+        "a a a a"
+        "b b c c"
+        "e e d d"
+        "h h g g"
+        "i i i i"
+        "j j j j"
+        "k k k k";
 }
-   
+    
+  
+    #ita, #bita{
+    height: 100vh;
+    }
+    
+    #dk, #bdk{
+    height: 100vh;
+        }
+    
+    #bfakta, #faktaboks{
+    height: 100vh;
+    }
+        
+h3{
+    font-size: 1vw;
+    }
+
+h1{
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+p{
+    font-size: 1.5vw;
+    }
+a{
+    font-size: 1vw;
+}
+
 }
 
 
