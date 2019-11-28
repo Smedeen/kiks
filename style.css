@@ -9,19 +9,20 @@
     .bi {
         width: 80%;
         max-width: 600px;
-        padding-bottom: 300px;
+        box-shadow: 10px 10px 5px grey;
     }
 
     .bd {
         width: 80%;
         max-width: 600px;
-        padding-bottom: 300px;
+        box-shadow: 10px 10px 5px grey;
     }
 
     .bf {
         width: 80%;
         max-width: 600px;
         align-items: center; 
+        padding-bottom: 30px;
     }
 /* billederne slut */
 
