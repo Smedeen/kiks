@@ -1,431 +1,482 @@
-    
-    html, body{
-    height: 100%;
-    text-align: center;
-}
-
-.bi{
-    width: 80%;  
-    max-width: 600px;
-    }
-    
-.bd{
-    width: 80%;
-    max-width: 600px;
-    }
-    
-.bf{
-    width: 80%;
-    max-width: 600px;
+    html,
+    body {
+        height: 100%;
+        text-align: center;
+        background-image: url(Asset%202.png);
+        background-size: cover;
     }
 
-/* Forsiden */
- #forside{
-    background-image: url(forsiden.jpg);
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    .bi {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .bd {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .bf {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    /* Forsiden */
+    #forside {
+        background-image: url(forsiden.jpg);
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+
+    /* Forsiden slut */
+
+    #ita,
+    #bita {
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #dk,
+    #bdk {
+        background-color: white;
+        background-size: cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #faktaboks {
+        height: 25vh;
+        justify-content:flex-start;
+        align-items:flex-start;
+    }
+
+     #bfakta {
+        padding-top: 100px;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items:flex-end;
+    }
+
+
    
-}
 
-/* Forsiden slut */
-    
-    #ita, #bita{
-    background-image: url(Asset%202.png);
-    height: 50vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .info {
+        justify-content: flex-end;
+        font-size: 2vw;
     }
-    
-    #dk, #bdk{
-    background-color: white;
-    height: 50vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-        }
-    
-    #bfakta, #faktaboks{
-    background-image: url(Asset%202.png);
-    height: 50vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+    /* læs mere knappen */
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3vw;
+      
     }
-    
-.info{
-    justify-content: flex-end;
-    font-size: 2vw;
-}
 
-
-/* læs mere knappen */
-a{
-    font-family:'Roboto', sans-serif;
-    font-size: 3vw;
-}
-
-a:link {color: #ffffff; text-decoration: none;
-}
-
-a:visited
-{color: white;
-}
-
-a:hover{
-    color: white;
-    text-decoration: underline;
-}
-/* slutning til læs mere */
-
-   h3{
-    font-family:'Roboto', sans-serif;
-    margin: 75px; 
-    max-width: 500px;
-    margin: 0 auto 20px;
-    text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 3vw;
+    a:link {
+        color: #ffffff;
+        text-decoration: none;
     }
-}
 
-
-h1{
-    font-size: 6vw;
-}
-
-h2 {
-    padding: 20px;
-    font-family: 'Cinzel', serif;
-    margin: 75px;
-    color: #f22626; 
-    max-width: 500px;
-    margin: 0 auto 20px;
-    text-align: center;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 5vw;
-}
-
-    p{
-    font-family:'Roboto', sans-serif;
-    margin: 75px; 
-    max-width: 500px;
-    margin: 0 auto 20px;
-    text-align: center;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 3vw;
+    a:visited {
+        color: white;
     }
-}
 
-p, img{
-  font-family: 'Roboto', sans-serif;
-    margin: 0 auto 20px;
-}
+    a:hover {
+        color: white;
+        text-decoration: underline;
+    }
 
-footer{
-    text-align: center;
-    font-size: 1vw;
-}
+    /* slutning til læs mere */
 
+    h3 {
+        font-family: 'Roboto', sans-serif;
+        margin: 75px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        text-align: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 3vw;
+    }
 
 
-/* css kode til vores scrollbar */
-.box{ 
+    h1 {
+        font-size: 6vw;
+    }
 
-    height: 300px; 
+    h2 {
+        padding: 20px;
+        font-family: 'Cinzel', serif;
+        margin: 75px;
+        color: #f22626;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 5vw;
+    }
 
-    overflow-x: scroll; 
+    p {
+        font-family: 'Roboto', sans-serif;
+        margin: 75px;
+        max-width: 500px;
+        margin: 0 auto 20px;
+        text-align: center;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 3vw;
+    }
 
-    overflow-y: hidden; 
 
-    white-space: nowrap; 
+    p,
+    img {
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto 20px;
+    }
 
-} 
+    footer {
+        text-align: center;
+        font-size: 1vw;
+    }
 
-.box::-webkit-scrollbar{ 
 
-    display: none; 
+    /* css kode til vores scrollbar */
+    .box {
+        background-color: white;
 
-} 
+        height: 300px; 
+        
+        overflow-x: scroll;
 
-.card-a{ 
+        overflow-y: hidden;
 
-    display: inline-block; 
+        white-space: nowrap;
+        
 
-    height: 100%; 
+    }
 
-    width: 400px; 
+    .box::-webkit-scrollbar {
 
-} 
+        display: none;
 
-.card-b{ 
+    }
 
-    display: inline-block; 
+    .card-a {
 
-    height: 100%; 
+        display: inline-block;
 
-    width: 400px;
-     
+        height: 100%;
 
-} 
+        width: 400px;
 
-.card-c{ 
+    }
 
-    display: inline-block; 
+    .card-b {
 
-    height: 100%; 
+        display: inline-block;
 
-    width: 400px; 
+        height: 100%;
 
-     
+        width: 400px;
 
-} 
 
-.card-d{ 
+    }
 
-    display: inline-block; 
+    .card-c {
 
-    height: 100%; 
+        display: inline-block;
 
-    width: 400px; 
+        height: 100%;
 
-     
+        width: 400px;
 
-} 
 
-.card-e{ 
 
-    display: inline-block; 
+    }
 
-    height: 100%; 
+    .card-d {
 
-    width: 400px; 
+        display: inline-block;
 
-} 
+        height: 100%;
 
-.card-f{ 
+        width: 400px;
 
-    display: inline-block; 
 
-    height: 100%; 
 
-    width: 400px; 
+    }
 
-} 
+    .card-e {
 
-.card-g{ 
+        display: inline-block;
 
-    display: inline-block; 
-
-    height: 100%; 
-
-    width: 400px; 
-
-} 
-/*scrollbaren slutter her */
-
-#mitgrid{
-    display: grid;
-    grid-gap: 10fr;
-    grid-template-columns:1fr;
-    grid-template-areas: 
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
-        "f"
-        "g"
-        "h"
-        "i"
-        "j"
-        "k"
-}
-
-#forside{
-    grid-area: a;
-}
-
-
-#ita{
-    grid-area: b; 
-}
-
-#bita{
-    grid-area: c;
-}
-
-#dk{
-    grid-area: d;
-}
-
-#bdk{
-    grid-area: e;
-}
-
-#bfakta{
-    grid-area: g;
-}
-
-#faktaboks{
-    grid-area: h;
-}
-
-#citat{
-    grid-area: i; 
-    padding-top: 90px;
-}
-
-.box{
-    grid-area: j;
-}
-
-footer{
-    grid-area: k;
-}
-
-
-/* 
+        height: 100%;
+
+        width: 400px;
+
+    }
+
+    .card-f {
+
+        display: inline-block;
+
+        height: 100%;
+
+        width: 400px;
+
+    }
+
+    .card-g {
+
+        display: inline-block;
+
+        height: 100%;
+
+        width: 400px;
+
+    }
+
+
+    /*scrollbaren slutter her */
+
+    #mitgrid {
+        display: grid;
+        grid-gap: 10fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i"
+            "j"
+            "k"
+    }
+
+    #forside {
+        grid-area: a;
+    }
+
+
+    #ita {
+        grid-area: b;
+    }
+
+    #bita {
+        grid-area: c;
+    }
+
+    #dk {
+        grid-area: d;
+    }
+
+    #bdk {
+        grid-area: e;
+    }
+
+    #bfakta {
+        grid-area: g;
+    }
+
+    #faktaboks {
+        grid-area: h;
+    }
+
+    #citat {
+        grid-area: i;
+        padding-top: 90px;
+        background-color: white;
+        background-size: cover;
+    }
+
+    .box {
+        grid-area: j;
+
+    }
+
+    footer {
+        grid-area: k;
+        background-color: white;
+        background-size: cover;
+        text-shadow: 1px 0.1px 
+    }
+
+
+    /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  #mitgrid{
-    display: grid;
-    grid-template-columns:1fr, 1fr;
-    grid-template-areas: 
-        "a a"
-        "b c"
-        "e d"
-        "g g"
-        "h h"
-        "i i"
-        "j j"
-        "k k";
-}
-     #ita{
-    background-image: url(Asset%202.png);
-    height: 100vh;
-    width: 50vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    #bita{
-    background-image: url(Asset%202.png);
-    height: 100vh;
-    width: 50vw;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    #dk, #bdk{
-    height: 100vh;
+    @media (min-width: 600px) and (max-width: 1024px) {
+
+        #mitgrid {
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-areas:
+                "a a"
+                "b c"
+                "e d"
+                "g g"
+                "h h"
+                "i i"
+                "j j"
+                "k k";
         }
-    
-    #bfakta, #faktaboks{
-    height: 50vh;
+
+        
+        #ita, #bita {
+            height: 100vh;
+        }
+        
+        #ita{
+            padding-left: 50px;
+        }
+
+        #dk,
+        #bdk {
+            height: 100vh;
+        }
+        
+    .bi {
+        width: 80%;
+        max-width: 600px;
     }
- 
-    
-h3{
-    font-size: 2vw;
+
+    .bd {
+        width: 80%;
+        max-width: 600px;
     }
 
-h1{
-    font-size: 5vw;
-}
-
-h2 {
-    font-size: 4vw;
-}
-
-p{
-    font-size: 2vw;
+    .bf {
+        width: 80%;
+        max-width: 600px;
     }
-a{
-    font-size: 2vw;
-}
-}
+
+        #bfakta,
+        #faktaboks {
+            height: 50vh;
+        }
+        
+        .bf {
+        width: 70%;
+        max-width: 600px;
+            }
+
+
+        h3 {
+            font-size: 2vw;
+        }
+
+        h1 {
+            font-size: 5vw;
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 2vw;
+            width: 250px
+        }
+
+        a {
+            font-size: 2vw;
+        }
+    }
 
 
 
-/* 
+    /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
-      #mitgrid{
-    display: grid;
-    grid-template-columns:1fr, 1fr, 1fr, 1fr;
-    grid-template-areas: 
-        "a a a a"
-        "b b c c"
-        "e e d d"
-        "h h g g"
-        "i i i i"
-        "j j j j"
-        "k k k k";
-}
-    
-  
-    #ita, #bita{
-    height: 100vh;
-    }
-    
-    #dk, #bdk{
-    height: 100vh;
+    @media (min-width: 1024px) {
+        #mitgrid {
+            display: grid;
+            grid-template-columns: 1fr, 1fr;
+            grid-template-areas:
+                "a a"
+                "b c"
+                "e d"
+                "h g"
+                "i i"
+                "j j"
+                "k k";
         }
-    
-    #bfakta, #faktaboks{
-    height: 100vh;
+
+
+   #ita,
+    #bita {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-        
-h3{
-    font-size: 1vw;
+
+    #dk,
+    #bdk {
+        background-color: white;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-h1{
-    font-size: 4vw;
-}
-
-h2 {
-    font-size: 2.5vw;
-}
-
-p{
-    font-size: 1.5vw;
+     #bfakta,  #faktaboks {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
     }
-a{
-    font-size: 1vw;
-}
-
-}
 
 
+ 
 
+        h3 {
+            font-size: 1vw;
+        }
 
+        h1 {
+            font-size: 4vw;
+        }
+
+        h2 {
+            font-size: 2.5vw;
+        }
+
+        p {
+            font-size: 1.5vw;
+        }
+
+        a {
+            font-size: 1vw;
+        }
+
+    }
