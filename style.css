@@ -63,8 +63,8 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    #faktaboks {
-        height: 25vh;
+    #faktaboks, #bfakta {
+        height: 50vh;
         justify-content:center;
         align-items:center;
         padding-top: 20px;
@@ -73,12 +73,6 @@
 
      #bfakta {
         padding-top: 100px;
-        height: 25vh;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items:center;
-        text-align: left;
     }
 
 
